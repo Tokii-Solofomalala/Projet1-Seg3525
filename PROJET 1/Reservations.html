@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="Bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <title>Home page</title>
+</head>
+<body>
+  <section id ="entete">
+    <div id ="navbar">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top navigateur">
+            <div class="container-fluid">
+              <a class="navbar-brand font-weight-bold" href="#">FitPro</a>
+              <nav class="navbar navbar-expand-sm .bg-warning navbar-light.fixed-top">
+                <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="Home.html#Accueil ">Accueil</a>
+                    </li>
+                   <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="#">Apropos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="Reservations.html">Reservation </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="Home.html#Contact">Contact </a>
+                      </li>
+                  </ul>
+                </div>
+            </div>  
+          </nav>
+        </section>
+            
+        </div>
+        <section id="reservations">
+            <center><h1 >Reservations</h1></center>
+            <div class="container ControlContainer">
+                <div class="row g-3">
+                    <div class="col">
+                      <label for="colFormLabel" class="col-sm-2 col-form-label">Nom</label>
+                      <input type="text" class="form-control" placeholder="Nom" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Prenom</label>
+                      <input type="text" class="form-control" placeholder="Prenom" aria-label="Last name">
+                    </div>
+                  </div>
+                  <div class="row mb-3 EmailControl">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col">
+                        <div class="form-floating CoachControl">
+                            <label for="floatingSelect">Coach :</label>
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Selectionner votre coach </option>
+                              <option value="1">Maria Colonde</option>
+                              <option value="2">Jessie MacDonald</option>
+                              <option value="3">Jamie Atkin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating CoursControl">
+                            <label for="floatingSelect">Cours:</label>
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Selectionner votre cours </option>
+                              <option value="1">Course a pied</option>
+                              <option value="2">body Building</option>
+                              <option value="3">HIIT</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="DateEtHeure">
+                    <form >
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Date et Heure</label>
+                        <input type="datetime-local" class ="form-control">
+                    </form>
+                </div>
+                  <div class="mb-3 BoutonReserver">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#confirmationModal">
+                  </div>
+            </div> 
+            <!-- Vertically centered modal -->
+            <div class="modal-dialog modal-dialog-centered">
+                <p>Votre reservation a ete confirmer avec succes. On est hate de s'entrainer avec vous.</p>
+            </div>
+        </section>
